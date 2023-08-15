@@ -8,13 +8,15 @@ function UserPage() {
 
   return (
 
+    <center>
     <div className="container">
       <h2>Welcome, {user.username}!</h2>
 
-      <p>Your ID is: {user.id}</p>
+      <p>View your current tasks:</p>
       
       <LogOutButton className="btn" />
     </div>
+    </center>
 
   );
 }

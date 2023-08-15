@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import {useSelector} from 'react-redux';
-import { useHistory } from 'react-router-dom';
 
 
 function LoginForm() {
@@ -9,7 +8,6 @@ function LoginForm() {
   const [password, setPassword] = useState('');
   const errors = useSelector(store => store.errors);
   const dispatch = useDispatch();
-  const history = useHistory();
 
 
   const login = (event) => {
@@ -66,8 +64,6 @@ function LoginForm() {
       </div>
       <div>
         <input className="btn" type="submit" name="submit" value="Log In" />
-            <button className='btn' onClick={toRegister}> Register </button>
-
       </div>
     </form>
 

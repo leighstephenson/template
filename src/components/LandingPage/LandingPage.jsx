@@ -5,8 +5,7 @@ import { Typography } from '@mui/material';
 
 // CUSTOM COMPONENTS
 import RegisterForm from '../RegisterForm/RegisterForm';
-import LoginForm from '../LoginForm/LoginForm';
-
+import LoginPage from '../LoginPage/LoginPage';
 function LandingPage() {
 
   const [heading, setHeading] = useState('Welcome');
@@ -18,8 +17,10 @@ function LandingPage() {
 
   return (
     <>
+      <Typography variant="h5" sx={{textAlign: 'center',}}> Please login to continue. </Typography>
+      <br/>
 
-      <LoginForm />
+      <LoginPage />
 
 
     </>
