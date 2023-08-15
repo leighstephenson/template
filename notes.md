@@ -1,5 +1,5 @@
 # Note Page 
-Use this file to jot down some notes. Maybe add a summary about the project here?
+Need to transfer over notes just Jules' fork.
 
 ## Tasks 
 - List some tasks here

@@ -14,8 +14,13 @@ CREATE TABLE "user" (
     "access_level" INT DEFAULT 0
 );
 
-CREATE TABLE "pets" (
-    "id" SERIAL PRIMARY KEY,
-    "name" VARCHAR(80) NOT NULL,
-    "user_id" INT REFERENCES "user"
+-- Need to copy over tasklist from Jules' fork
+CREATE TABLE tasklist (
+    "id" serial PRIMARY KEY,
+    "taskname" VARCHAR (400) NOT NULL,
+    "date" VARCHAR (50),
+    "completionstatus" BOOLEAN DEFAULT FALSE 
 );
+
+INSERT INTO "tasklist" ("taskname", "date", "completionstatus")
+VALUES ('Schedule appointment', '3/19/2023', FALSE);
