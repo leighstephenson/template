@@ -1,7 +1,7 @@
 
    
 -- CREATE DATABASE "first-look"
-
+-- Steve was here
 
 -- USER is a reserved keyword with Postgres
 -- You must use double quotes in every query that user is in:
@@ -14,13 +14,15 @@ CREATE TABLE "user" (
     "access_level" INT DEFAULT 0
 );
 
--- Need to copy over tasklist from Jules' fork
+-- (task name, date added, due date, priority level, notes, completion status )
+
 CREATE TABLE tasklist (
     "id" serial PRIMARY KEY,
     "taskname" VARCHAR (400) NOT NULL,
-    "date" VARCHAR (50),
+    "dateadded" VARCHAR (50),
+    "duedate" VARCHAR (50),
     "completionstatus" BOOLEAN DEFAULT FALSE 
+    "prioritylevel" VARCHAR (10)
+    "notes" VARCHAR (2000)
 );
 
-INSERT INTO "tasklist" ("taskname", "date", "completionstatus")
-VALUES ('Schedule appointment', '3/19/2023', FALSE);
