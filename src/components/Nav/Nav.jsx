@@ -11,7 +11,7 @@ function Nav() {
     <div className="nav">
 
       <Link to="/home">
-        <h2 className="nav-title"> Template </h2>
+        <h2 className="nav-title"> To-Do List </h2>
       </Link>
 
       <div>

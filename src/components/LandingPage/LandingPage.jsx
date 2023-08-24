@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import './LandingPage.css';
+import { Typography } from '@mui/material';
 
 // CUSTOM COMPONENTS
 import RegisterForm from '../RegisterForm/RegisterForm';
-
+import LoginPage from '../LoginPage/LoginPage';
 function LandingPage() {
-  
+
   const [heading, setHeading] = useState('Welcome');
   const history = useHistory();
 
@@ -15,33 +16,14 @@ function LandingPage() {
   };
 
   return (
-    <div className="container">
+    <>
+      <Typography variant="h5" sx={{textAlign: 'center',}}> Please login to continue. </Typography>
+      <br/>
 
-      <h2>{heading}</h2>
+      <LoginPage />
 
-      <div className="grid">
 
-        <div className="grid-col grid-col_8">
-          <p>
-            Enter content for landing page here
-          </p>
-        </div>
-
-        <div className="grid-col grid-col_4">
-          <RegisterForm />
-
-          <center>
-            <h4>Already a Member?</h4>
-            <button className="btn btn_sizeSm" onClick={onLogin}>
-              Login
-            </button>
-          </center>
-
-        </div>
-
-      </div>
-
-    </div>
+    </>
   );
 }
 
