@@ -12,7 +12,7 @@ function UserPage() {
     <div className="container">
       <h2>Welcome, {user.username}!</h2>
 
-      <p>View your current tasks:</p>
+      <p>Add content here</p>
       
       <LogOutButton className="btn" />
     </div>
